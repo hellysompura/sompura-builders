@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --primary-orange: #f7c4a6;
+  --primary-gold: #b68f55;
+  --primary-brown: #9c4d32;
+  --primary-white: #ffffff;
+  --primary-black: #000000;
+  --primary-gray: #808080;
+
+  /* orange opacity */
+  --primary-orange-10: #f7c4a61a;
+  --primary-orange-20: #f7c4a633;
+  --primary-orange-30: #f7c4a64d;
+  --primary-orange-40: #f7c4a666;
+  --primary-orange-50: #f7c4a680;
+  --primary-orange-60: #f7c4a699;
+  --primary-orange-70: #f7c4a6b3;
+  --primary-orange-80: #f7c4a6cc;
+  --primary-orange-90: #f7c4a6e6;
+
+  /* gold opacity */
+  --primary-gold-10: #b68f551a;
+  --primary-gold-20: #b68f5533;
+  --primary-gold-30: #b68f554d;
+  --primary-gold-40: #b68f5566;
+  --primary-gold-50: #b68f5580;
+  --primary-gold-60: #b68f5599;
+  --primary-gold-70: #b68f55b3;
+  --primary-gold-80: #b68f55cc;
+  --primary-gold-90: #b68f55e6;
+
+  /* brown opacity */
+  --primary-brown-10: #9c4d321a;
+  --primary-brown-20: #9c4d3233;
+  --primary-brown-30: #9c4d324d;
+  --primary-brown-40: #9c4d3266;
+  --primary-brown-50: #9c4d3280;
+  --primary-brown-60: #9c4d3299;
+  --primary-brown-70: #9c4d32b3;
+  --primary-brown-80: #9c4d32cc;
+  --primary-brown-90: #9c4d32e6;
+
+  /* fonts */
+  --header-fonts: "Montserrat", sans-serif;
+  --body-fonts: "Cormorant", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+input::placeholder {
+  color: var(--primary-brown-70);
+}
