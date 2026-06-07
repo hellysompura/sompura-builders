@@ -7,7 +7,7 @@ import ContactUs from "./home/ContactUs";
 export default function Home() {
   return (
     <React.Fragment>
-      <div className="h-[550px]">
+      <div className="lg:h-[550px] h-[300px]">
         <HeroCarousel />
       </div>
 

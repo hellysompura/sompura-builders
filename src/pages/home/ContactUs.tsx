@@ -10,9 +10,9 @@ export default function ContactUs() {
         {" "}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="relative">
-            <div className="border-4 border-(--primary-gold) rounded-3xl p-12 relative bg-white shadow-lg">
+            <div className="border-4 border-(--primary-gold) rounded-3xl p-12 relative bg-white shadow-lg h-full">
               <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-(--primary-white) px-4 lg:w-[400px]">
-                <h3 className="font-(family-name:--body-fonts) text-(--primary-gold) font-bold text-center lg:text-3xl text-xl">
+                <h3 className="font-(family-name:--body-fonts) text-(--primary-gold) font-bold text-center lg:text-4xl text-xl">
                   BEGIN YOUR SPIRITUAL JOURNEY
                 </h3>
               </div>

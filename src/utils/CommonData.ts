@@ -24,7 +24,7 @@ interface HeroSlide {
 
 export const NAVIGATION_DATA = [
   { label: "Home", path: "/" },
-  { label: "About Us", path: "/about" },
+  { label: "About Us", path: "/founders" },
   { label: "OUR WORK", path: "/our-work" },
   { label: "Services", path: "/services" },
   { label: "Gallery", path: "/gallery" },

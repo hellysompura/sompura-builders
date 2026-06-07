@@ -89,10 +89,10 @@ export default function Founders() {
                     <img
                       src={founder.image}
                       alt={founder.name}
-                      className="w-full h-[600px] object-cover"
+                      className="w-full lg:h-[600px] h-[300px] object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-[#9C4D32]/90 to-transparent">
+                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 bg-linear-to-t from-[#9C4D32]/90 to-transparent">
                       <div className="flex items-center gap-4 text-white mb-2">
                         <Calendar className="w-5 h-5 text-[#F7C4A6]" />
                         <span
@@ -125,19 +125,19 @@ export default function Founders() {
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                
                 <h2
-                  className="font-['Cormorant_Infant'] text-[#9C4D32] mb-4"
+                  className="font-['Cormorant_Infant'] text-[#9C4D32] mb-4 text-center lg:text-left"
                   style={{ fontSize: "56px", fontWeight: 700, lineHeight: 1.1 }}
                 >
                   {founder.name}
                 </h2>
                 <h3
-                  className="font-['Montserrat'] text-[#B68F55] mb-6"
+                  className="font-['Montserrat'] text-[#B68F55] mb-6 text-center lg:text-left"
                   style={{ fontSize: "20px", fontWeight: 600 }}
                 >
                   {founder.title}
                 </h3>
                 <p
-                  className="font-['Montserrat'] text-gray-700 leading-relaxed mb-8"
+                  className="font-['Montserrat'] text-gray-700 leading-relaxed mb-8 text-center lg:text-left"
                   style={{ fontSize: "16px" }}
                 >
                   {founder.bio}
