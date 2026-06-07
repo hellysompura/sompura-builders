@@ -32,6 +32,9 @@ export default function AboutUs() {
               id="about-us"
               label="Meet our Founders"
               className="uppercase font-semibold tracking-wider font-(family-name:--header-fonts)"
+              onClick={() => {
+                window.location.href = "/founders";
+              }}
             />
           </div>
         </div>

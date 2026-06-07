@@ -1,32 +1,19 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+
 import Header from "./home/Header";
-import HeroCarousel from "./home/HeroCarousel";
-import AboutUs from "./home/AboutUs";
-import WorkList from "./home/WorkList";
-import ContactUs from "./home/ContactUs";
+import Home from "./Home";
+import Founders from "./Founders";
 
 export default function Layout() {
   return (
     <React.Fragment>
       <Header />
 
-      <div className="h-[550px]">
-        <HeroCarousel />
-      </div>
-
-      <div className="max-w-[1800px] px-6 py-8 mx-auto">
-        <AboutUs />
-      </div>
-
-      <div className="bg-(--primary-orange)">
-        <div className="max-w-[1800px] px-6 py-8 mx-auto">
-          <WorkList />
-        </div>
-      </div>
-
-      <div className="max-w-[1800px] px-6 py-8 mx-auto">
-        <ContactUs />
-      </div>
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="/founders" element={<Founders />} />
+      </Routes>
     </React.Fragment>
   );
 }

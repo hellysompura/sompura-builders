@@ -1,7 +1,6 @@
 import React from "react";
 import InputComponent from "../../components/InputComponent";
 import PrimaryButton from "../../components/PrimaryButton";
-import { Mail, MapPin, Phone } from "lucide-react";
 import Icon from "../../components/Icon";
 
 export default function ContactUs() {
