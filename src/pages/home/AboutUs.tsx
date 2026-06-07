@@ -2,8 +2,10 @@ import React from "react";
 import PrimaryButton from "../../components/PrimaryButton";
 
 import foundersImage from "../../assets/founders/founders.jpg";
+import { useNavigate } from "react-router";
 
 export default function AboutUs() {
+  const navigate = useNavigate();
   return (
     <React.Fragment>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2">
@@ -33,7 +35,7 @@ export default function AboutUs() {
               label="Meet our Founders"
               className="uppercase font-semibold tracking-wider font-(family-name:--header-fonts)"
               onClick={() => {
-                window.location.href = "/founders";
+                navigate("/founders");
               }}
             />
           </div>
