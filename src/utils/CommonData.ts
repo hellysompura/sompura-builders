@@ -23,12 +23,12 @@ interface HeroSlide {
 }
 
 export const NAVIGATION_DATA = [
-  { label: "Home", path: "/" },
-  { label: "About Us", path: "/founders" },
-  { label: "OUR WORK", path: "/our-work" },
-  { label: "Services", path: "/services" },
-  { label: "Gallery", path: "/gallery" },
-  { label: "Contact", path: "/contact" },
+  { label: "Home", sectionId: "home" },
+  { label: "About Us", sectionId: "founders" },
+  { label: "OUR WORK", sectionId: "ourWork" },
+  // { label: "Services", sectionId: "services" },
+  { label: "Gallery", sectionId: "gallery" },
+  { label: "Contact", sectionId: "contact" },
 ] as const;
 
 export const HERO_SLIDES: HeroSlide[] = [

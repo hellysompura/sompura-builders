@@ -1,9 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Header from "./home/Header";
+import Header from "./Header";
 import Home from "./Home";
 import Founders from "./Founders";
+import Footer from "./Footer";
 
 export default function Layout() {
   return (
@@ -14,6 +15,8 @@ export default function Layout() {
         <Route path="/" index element={<Home />} />
         <Route path="/founders" element={<Founders />} />
       </Routes>
+      
+      <Footer />
     </React.Fragment>
   );
 }

@@ -1,9 +1,16 @@
 import React from "react";
-import SearchInput from "../../components/SearchInput";
-import PrimaryButton from "../../components/PrimaryButton";
-import { NAVIGATION_DATA } from "../../utils/CommonData";
+import SearchInput from "../components/SearchInput";
+import PrimaryButton from "../components/PrimaryButton";
+import { NAVIGATION_DATA } from "../utils/CommonData";
 
 const Header = () => {
+  const scrollToSection = (sectionId: string) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <React.Fragment>
       <header className="w-full flex gap-4 items-center justify-between py-3 px-4">
@@ -20,7 +27,7 @@ const Header = () => {
             name="search"
             value=""
             className="w-[50%]"
-            onChange={() => {}}
+            onChange={() => { }}
           />
         </div>
 
@@ -37,11 +44,13 @@ const Header = () => {
 
       <nav className="hidden lg:flex items-center justify-center gap-8 my-2 py-2">
         {NAVIGATION_DATA.map((item) => (
-          <div key={item.label} className="text-(--primary-brown-70) hover:text-(--primary-brown-90) font-(family-name:--header-fonts) transition-colors duration-200 uppercase font-semibold">
-            <a href={item.path}>
-              {item.label}
-            </a>
-          </div>
+          <button
+            key={item.label}
+            onClick={() => scrollToSection(item.sectionId)}
+            className="text-(--primary-brown-70) hover:text-(--primary-brown-90) font-(family-name:--header-fonts) transition-colors duration-200 uppercase font-semibold cursor-pointer bg-transparent border-none"
+          >
+            {item.label}
+          </button>
         ))}
       </nav>
     </React.Fragment>
