@@ -16,7 +16,7 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <div>
+                        <div className="justify-self-center">
                             <h4 className="font-['Cormorant_Infant'] text-[#B68F55] mb-6" style={{ fontSize: '20px', fontWeight: 700 }}>
                                 Quick Links
                             </h4>
@@ -28,6 +28,27 @@ const Footer = () => {
                                         </span>
                                     </li>
                                 ))}
+                            </ul>
+                        </div>
+
+                        <div className="justify-self-end">
+                            <h4 className="font-['Cormorant_Infant'] text-[#B68F55] mb-6" style={{ fontSize: '20px', fontWeight: 700 }}>
+                                Contact
+                            </h4>
+                            <ul className="space-y-3">
+                                <li className="flex flex-col">
+                                    <span className="font-['Montserrat'] text-[#F7C4A6]" style={{ fontSize: '14px' }}>
+                                        +91 98982 01412
+                                    </span>
+                                    <span className="font-['Montserrat'] text-[#F7C4A6]" style={{ fontSize: '14px' }}>
+                                        +91 98982 07069
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="font-['Montserrat'] text-[#F7C4A6]" style={{ fontSize: '14px' }}>
+                                        info@sompurasonsgroup.com
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>

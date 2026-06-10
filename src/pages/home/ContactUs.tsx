@@ -4,6 +4,11 @@ import PrimaryButton from "../../components/PrimaryButton";
 import Icon from "../../components/Icon";
 
 export default function ContactUs() {
+
+  const handleCheckAddress = () => {
+    window.open("https://maps.app.goo.gl/EnRT65x1gJzh9L6R7", "_blank");
+  };
+
   return (
     <React.Fragment>
       <div>
@@ -24,7 +29,7 @@ export default function ContactUs() {
                     label="Name"
                     name="name"
                     value={null}
-                    onChange={() => {}}
+                    onChange={() => { }}
                     className="w-full"
                   />
                 </div>
@@ -34,7 +39,7 @@ export default function ContactUs() {
                     label="Email"
                     name="email"
                     value={null}
-                    onChange={() => {}}
+                    onChange={() => { }}
                     className="w-full"
                   />
                 </div>
@@ -44,7 +49,7 @@ export default function ContactUs() {
                     label="Phone"
                     name="phone"
                     value={null}
-                    onChange={() => {}}
+                    onChange={() => { }}
                     className="w-full"
                   />
                 </div>
@@ -54,7 +59,7 @@ export default function ContactUs() {
                     label="Project Type"
                     name="project-type"
                     value={null}
-                    onChange={() => {}}
+                    onChange={() => { }}
                     className="w-full"
                   />
                 </div>
@@ -64,7 +69,7 @@ export default function ContactUs() {
                     label="Message"
                     name="message"
                     value={null}
-                    onChange={() => {}}
+                    onChange={() => { }}
                     className="w-full"
                     type="textarea"
                   />
@@ -140,7 +145,7 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 cursor-pointer" onClick={handleCheckAddress}>
                   <div className="w-12 h-12 rounded-full bg-(--primary-gold) flex items-center justify-center shrink-0">
                     <Icon name="MapPin" className="w-6 h-6 text-white" />
                   </div>

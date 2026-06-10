@@ -18,12 +18,12 @@ export default function WorkList() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {WORK_LIST_DATA.map((work, index) => (
-          <div key={index} className="rounded-xl overflow-hidden">
+          <div key={index} className="rounded-xl overflow-hidden group">
             <div className="relative group shadow-lg h-[400px] object-cover">
               <img
                 src={work.image}
                 alt={work.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <h3 className="absolute bottom-0 left-0 right-0 text-center text-(--primary-gold) bg-(--primary-white) font-semibold font-(family-name:--header-fonts) bg-opacity-50 px-2 py-4">
                 {work.title}

@@ -51,35 +51,35 @@ export const HERO_SLIDES: HeroSlide[] = [
 
 export const WORK_LIST_DATA = [
   {
-    title: "Surat",
+    title: "Asansol, Kolkata",
     image: work01,
   },
   {
-    title: "Ahmedabad",
+    title: "Vijapur - Solapur Highway, Karnataka",
     image: work02,
   },
   {
-    title: "Vadodara",
+    title: "Ghar Derasar, Surat",
     image: work03,
   },
   {
-    title: "Surat",
+    title: "Nanpura, Surat",
     image: work04,
   },
   {
-    title: "Ahmedabad",
+    title: "Athwalines, Surat",
     image: work05,
   },
   {
-    title: "Vadodara",
+    title: "Ghar Mandir, Surat",
     image: work06,
   },
   {
-    title: "Surat",
+    title: "Vesu, Surat",
     image: work07,
   },
   {
-    title: "Surat",
+    title: "Gangavati, Karnataka",
     image: work08,
   },
 ] as const;
