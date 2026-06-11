@@ -91,7 +91,7 @@ export const FOUNDERS_DATA = [
     image: hiteshSompura,
     experience: "15+ Years",
     specialization: "Traditional Temple Design",
-    bio: "With over four decades of experience in sacred architecture, Hitesh Sompura carries forward a family legacy spanning seven generations of temple builders. His deep understanding of Vastu Shastra and ancient architectural texts has shaped some of the most magnificent temples across India. A recipient of the National Craftsmanship Award, he has dedicated his life to preserving the authentic traditions of Sompura temple architecture.",
+    bio: "With over one and half decades of experience in sacred architecture, Hitesh Sompura carries forward a family legacy spanning seven generations of temple builders. His deep understanding of Vastu Shastra and ancient architectural texts has shaped some of the most magnificent temples across India. A recipient of the National Craftsmanship Award, he has dedicated his life to preserving the authentic traditions of Sompura temple architecture.",
     achievements: [
       "Completed 40+ temple projects across India",
       "Expert in Jain and Hindu temple Vastu principles",
