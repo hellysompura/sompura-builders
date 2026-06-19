@@ -28,19 +28,19 @@ export default function Founders() {
         <div className="absolute inset-0 max-w-[1440px] mx-auto px-6 flex flex-col justify-center">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-[#F7C4A6] hover:text-white transition-colors mb-8 font-['Montserrat']"
+            className="inline-flex items-center gap-2 text-(--primary-orange) hover:text-white transition-colors mb-8 font-['Montserrat']"
             style={{ fontSize: "14px", fontWeight: 600 }}
           >
             ← BACK TO HOME
           </Link>
           <h1
-            className="font-['Cormorant_Infant'] text-white mb-4"
+            className="font-(family-name:--body-fonts) text-white mb-4"
             style={{ fontSize: "72px", fontWeight: 700, lineHeight: 1.1 }}
           >
             Meet Our Founders
           </h1>
           <p
-            className="font-['Montserrat'] text-[#F7C4A6] max-w-2xl"
+            className="font-['Montserrat'] text-(--primary-orange) max-w-2xl"
             style={{ fontSize: "20px" }}
           >
             The visionaries behind Sompura Artisans & Builders, carrying forward
@@ -54,17 +54,17 @@ export default function Founders() {
           {STATS_DATA.map((stat, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-xl p-6 text-center border-t-4 border-[#B68F55]"
+              className="bg-white rounded-xl shadow-xl p-6 text-center border-t-4 border-(--primary-gold)"
             >
-              <stat.icon className="w-10 h-10 text-[#B68F55] mx-auto mb-3" />
+              <stat.icon className="w-10 h-10 text-(--primary-gold) mx-auto mb-3" />
               <div
-                className="font-['Cormorant_Infant'] text-[#9C4D32] mb-1"
+                className="font-(family-name:--body-fonts) text-[#9C4D32] mb-1"
                 style={{ fontSize: "40px", fontWeight: 700 }}
               >
                 {stat.value}
               </div>
               <div
-                className="font-['Montserrat'] text-gray-600"
+                className="font-(family-name:--header-fonts) text-gray-600"
                 style={{ fontSize: "14px", fontWeight: 500 }}
               >
                 {stat.label}
@@ -94,7 +94,7 @@ export default function Founders() {
                     <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-8 bg-linear-to-t from-[#9C4D32]/90 to-transparent">
                       <div className="flex items-center gap-4 text-white mb-2">
-                        <Calendar className="w-5 h-5 text-[#F7C4A6]" />
+                        <Calendar className="w-5 h-5 text-(--primary-orange)" />
                         <span
                           className="font-['Montserrat']"
                           style={{ fontSize: "16px", fontWeight: 600 }}
@@ -103,7 +103,7 @@ export default function Founders() {
                         </span>
                       </div>
                       <div className="flex items-center gap-4 text-white">
-                        <Hammer className="w-5 h-5 text-[#F7C4A6]" />
+                        <Hammer className="w-5 h-5 text-(--primary-orange)" />
                         <span
                           className="font-['Montserrat']"
                           style={{ fontSize: "16px", fontWeight: 600 }}
@@ -114,24 +114,24 @@ export default function Founders() {
                     </div>
                   </div>
                   <div
-                    className={`absolute ${index % 2 === 0 ? "-right-6 -bottom-6" : "-left-6 -bottom-6"} w-32 h-32 border-4 border-[#B68F55] rounded-full opacity-30`}
+                    className={`absolute ${index % 2 === 0 ? "-right-6 -bottom-6" : "-left-6 -bottom-6"} w-32 h-32 border-4 border-(--primary-gold) rounded-full opacity-30`}
                   ></div>
                   <div
-                    className={`absolute ${index % 2 === 0 ? "-left-6 -top-6" : "-right-6 -top-6"} w-24 h-24 border-4 border-[#F7C4A6] rounded-full opacity-30`}
+                    className={`absolute ${index % 2 === 0 ? "-left-6 -top-6" : "-right-6 -top-6"} w-24 h-24 border-4 border-(--primary-orange) rounded-full opacity-30`}
                   ></div>
                 </div>
               </div>
 
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-               
+
                 <h2
-                  className="font-['Cormorant_Infant'] text-[#9C4D32] mb-4 text-center lg:text-left"
+                  className="font-(family-name:--body-fonts) text-[#9C4D32] mb-4 text-center lg:text-left"
                   style={{ fontSize: "56px", fontWeight: 700, lineHeight: 1.1 }}
                 >
                   {founder.name}
                 </h2>
                 <h3
-                  className="font-['Montserrat'] text-[#B68F55] mb-6 text-center lg:text-left"
+                  className="font-['Montserrat'] text-(--primary-gold) mb-6 text-center lg:text-left"
                   style={{ fontSize: "20px", fontWeight: 600 }}
                 >
                   {founder.title}
@@ -143,9 +143,9 @@ export default function Founders() {
                   {founder.bio}
                 </p>
 
-                <div className="bg-[#F7C4A6] rounded-xl p-6">
+                <div className="bg-(--primary-orange) rounded-xl p-6">
                   <h4
-                    className="font-['Cormorant_Infant'] text-[#9C4D32] mb-4"
+                    className="font-(family-name:--body-fonts) text-[#9C4D32] mb-4"
                     style={{ fontSize: "24px", fontWeight: 700 }}
                   >
                     Key Achievements
@@ -153,7 +153,7 @@ export default function Founders() {
                   <ul className="space-y-3">
                     {founder.achievements.map((achievement, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <Award className="w-5 h-5 text-[#B68F55] flex-shrink-0 mt-0.5" />
+                        <Award className="w-5 h-5 text-(--primary-gold) flex-shrink-0 mt-0.5" />
                         <span
                           className="font-['Montserrat'] text-gray-700"
                           style={{ fontSize: "15px" }}
@@ -170,11 +170,11 @@ export default function Founders() {
         </div>
       </div>
 
-      <div className="bg-[#F7C4A6] py-20">
+      <div className="bg-(--primary-orange) py-20">
         <div className="max-w-[1440px] mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2
-              className="font-['Cormorant_Infant'] text-[#9C4D32] mb-6"
+              className="font-(family-name:--body-fonts) text-[#9C4D32] mb-6"
               style={{ fontSize: "48px", fontWeight: 700 }}
             >
               A Legacy Built on Faith & Craftsmanship

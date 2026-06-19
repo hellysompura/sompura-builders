@@ -120,10 +120,20 @@ export default function ContactUs() {
                       PHONE
                     </p>
                     <p className="font-(family-name:--header-fonts) text-(--primary-white) text-sm lg:text-lg">
-                      +91 98982 07069
+                      <a
+                        href="tel:+919898207069"
+                        className="block hover:underline"
+                      >
+                        +91 98982 07069
+                      </a>
                     </p>
                     <p className="font-(family-name:--header-fonts) text-(--primary-white) text-sm lg:text-lg">
-                      +91 98982 01412
+                      <a
+                        href="tel:+919898201412"
+                        className="block hover:underline"
+                      >
+                        +91 98982 01412
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -137,10 +147,32 @@ export default function ContactUs() {
                       EMAIL
                     </p>
                     <p className="font-(family-name:--header-fonts) text-(--primary-white) text-sm lg:text-lg">
-                      mehulsompura90@gmail.com
+                       <a
+                        href="mailto:mehulsompura90@gmail.com"
+                        onClick={() =>
+                          window.open(
+                            "https://mail.google.com/mail/?view=cm&to=mehulsompura90@gmail.com",
+                            "_blank",
+                          )
+                        }
+                        className="hover:underline"
+                      >
+                        mehulsompura90@gmail.com
+                      </a>
                     </p>
                     <p className="font-(family-name:--header-fonts) text-(--primary-white) text-sm lg:text-lg">
-                      contact@sompurabuilders.com
+                      <a
+                        href="mailto:info.sompuraandson@gmail.com"
+                        onClick={() =>
+                          window.open(
+                            "https://mail.google.com/mail/?view=cm&to=info.sompuraandson@gmail.com",
+                            "_blank",
+                          )
+                        }
+                        className="hover:underline"
+                      >
+                        info.sompuraandson@gmail.com
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -165,17 +197,17 @@ export default function ContactUs() {
               </div>
 
               {/* <div>
-                <p className="font-(family-name:--header-fonts) text-[#F7C4A6] mb-4" style={{ fontSize: '14px', fontWeight: 600 }}>
+                <p className="font-(family-name:--header-fonts) text-(--primary-orange) mb-4" style={{ fontSize: '14px', fontWeight: 600 }}>
                   FOLLOW US
                 </p>
                 <div className="flex gap-4">
-                  <a href="#" className="w-10 h-10 rounded-full bg-[#B68F55] hover:bg-[#9C7A45] flex items-center justify-center transition-colors">
+                  <a href="#" className="w-10 h-10 rounded-full bg-(--primary-gold) hover:bg-[#9C7A45] flex items-center justify-center transition-colors">
                     <Facebook className="w-5 h-5 text-white" />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-[#B68F55] hover:bg-[#9C7A45] flex items-center justify-center transition-colors">
+                  <a href="#" className="w-10 h-10 rounded-full bg-(--primary-gold) hover:bg-[#9C7A45] flex items-center justify-center transition-colors">
                     <Instagram className="w-5 h-5 text-white" />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-[#B68F55] hover:bg-[#9C7A45] flex items-center justify-center transition-colors">
+                  <a href="#" className="w-10 h-10 rounded-full bg-(--primary-gold) hover:bg-[#9C7A45] flex items-center justify-center transition-colors">
                     <Linkedin className="w-5 h-5 text-white" />
                   </a>
                 </div>
